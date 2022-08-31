@@ -1,16 +1,30 @@
-# Alveolus Analysis - Web Application User Guide
+# Alveolus Analysis - Web-based Application User Guide
 
-This README contains a user guide for the Alveolus Analysis web application. It also includes instructions for installing the software, processing your own image data set, and running the tool locally.
+This README contains a user guide for the Alveolus Analysis web-based application. It also includes instructions for installing the software, processing your own image data set, and running the tool locally.
 
 We provide a Web Demonstration of the system which includes data for two pre-processed experiments. This demonstration may be found at the link below:
 
-### [Link to Web Demonstration of System](https://dyushen.github.io/CS529_final_project/)
+[**_Link to Web Demonstration of System_**](https://dyushen.github.io/CS529_final_project/)
 
 ---
 
+## Table of Contents  
+[**User Guide**](#using-the-web-application)  
+[**Setup Instructions**](#setting-up-locally-for-your-own-use)
+* [Clone The Repository](#cloning-the-repository)
+* [Data Preprocessing](#data-preprocessing)
+* [Running the Web-based Application](#setting-up-locally-for-your-own-use)
+* [Setup Instructions](#setting-up-locally-for-your-own-use)
+
+[**Libraries and Tools Used**](#libraries-and-tools)
+
 ---
 
-## Setting up locally for your own use
+##  Using the Web-based Application
+
+---
+
+##  Setting up locally for your own use
 
 This section will describe the steps to download the code of the project to your machine, pre-process your own data, and load it into the application
 
@@ -55,7 +69,7 @@ python preprocess.py ...
 
 ## Libraries and Tools
 
-Libraries Used for the implementation of the web application:
+Libraries Used for the implementation of the web-based application:
 
 - d3.js ([LICENSE](https://github.com/d3/d3/blob/master/LICENSE)): [https://d3js.org/](https://d3js.org/)
 - Popper ([LICENSE](https://github.com/popperjs/popper-core/blob/master/LICENSE.md)): [https://popper.js.org/](https://popper.js.org/)
