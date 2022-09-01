@@ -23,6 +23,34 @@ We provide a Web Demonstration of the system which includes data for two pre-pro
 
 ##  Application User Guide
 
+This section will give you an overview of the visualizations included in Alveolus Analysis, how to use it
+
+### Charts and Their Explanations
+
+#### Experiment Selection and Navigation
+
+| Name | Example | Explanation |
+| ---- | ------- | ----------- |
+| Experiment Summary | ![image](https://user-images.githubusercontent.com/15022659/187833313-db4c4809-c87a-4692-b72b-bf77a4c65259.png) | |
+| Timeline | ![image](https://user-images.githubusercontent.com/15022659/187833923-63e91f38-6f24-4a3f-b992-70a147690144.png) | |
+
+#### Single Experiment Charts
+
+| Name | Example | Explanation |
+| ---- | ------- | ----------- |
+| Cycle Stage Over Time | ![image](https://user-images.githubusercontent.com/15022659/187834005-0412a392-0190-4103-a634-21f198cea9b0.png) | |
+| Respiratory Cycle | ![image](https://user-images.githubusercontent.com/15022659/187834028-bdc78928-07a6-4d18-a565-5a3ad152cb4e.png) | |
+| Image Preview | ![image](https://user-images.githubusercontent.com/15022659/187834058-8249dd87-46d9-43e5-82d5-6d602b847f00.png) | |
+
+#### Experiment Pairwise Comparison Charts
+
+| Name | Example | Explanation |
+| ---- | ------- | ----------- |
+| Area Change Start-to-End | ![image](https://user-images.githubusercontent.com/15022659/187834085-9531fda8-5ba7-46ce-8378-49050b0c673a.png) | The change in Interstitial % and Neutrophil area from the Start to End of the selected experiments |
+| Feature Area Distribution | ![image](https://user-images.githubusercontent.com/15022659/187834124-e3e26fdb-a87d-4fab-a9f3-a72ffc3be7dd.png) | The distribution of area by feature type across the selected experiments. Select the checkbox in the upper right to only show values at max inflation |
+| Feature Area Difference Over Time | ![image](https://user-images.githubusercontent.com/15022659/187834166-a24cf7a3-b533-4004-9698-acecafa905da.png) |  The absolute difference in area by feature type between the two selected experiments |
+
+
 ---
 
 ##  Setting up locally for your own use
@@ -39,7 +67,12 @@ git clone https://github.com/dyushen/CS529_final_project.git
 
 ### Starting the Application
 
+An easy way to use the application on your local machine is to use the Python `SimpleHTTPServer` as follows, then open your web browser (Chrome ideally) to [http://localhost:8080](http://localhost:8080)
 
+```bash
+# inside the root directory of the repository
+python -m SimpleHTTPServer 8080
+```
 
 ### Data Preprocessing
 
@@ -85,7 +118,8 @@ The preprocessing tool makes several assumptions regarding the format of the sto
 
 #### Input Image Data Examples
 
-Below is an example of the input data for each `ch2` anc `ch4` image type. Note: the `ch4` image is very dark and has compression artifacts as shown below in .PNG format.
+Below is an example of the input data for each `ch2` anc `ch4` image type.
+> Note: the `ch4` image is very dark and has compression artifacts as shown below in .PNG format.
 
 | `ch2` image (Alveoli) | `ch4` image (Neutrophil) |
 | ----------- | ----------- | 
