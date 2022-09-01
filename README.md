@@ -50,9 +50,18 @@ python preprocess.py --manual_mode --img_path ./path/to/images/ --h_alv 35 --tws
 
 The preprocessing tool makes several assumptions regarding the format of the stored data and where the outputs will be saved. Please ensure that the necessary steps are completed before running the above command(s). The assumptions are described below.
 
-- Images are divided into two channels: ch2 and ch4, stored in two separate directories. These directories must be named exactly "cv2" and "ch4".
+- Images are divided into two channels: ch2 and ch4, stored in two separate directories. These directories must be named exactly "ch2" and "ch4".
 - Images are saved in the ".ome.tif" format and the archive is named following this general format: ```<text>_Ch<2,4>_000001.ome.tif```
 - A directory named "combo" exists in the provided image directory.
+
+#### Input Image Data Examples
+
+Below is an example of the input data for each `ch2` anc `ch4` image type. Note: the `ch4` image is very dark and has compression artifacts as shown below in .PNG format.
+
+| `ch2` image (Alveoli) | `ch4` image (Neutrophil) |
+| ----------- | ----------- | 
+| ![ch2](https://user-images.githubusercontent.com/15022659/187831098-0c5446a3-5595-4970-8721-ca48d8a81ba6.png) | ![ch4](https://user-images.githubusercontent.com/15022659/187831123-dfc328f9-23c5-4568-9af8-5095c9a62d6f.png) |
+
 
 #### Tuning Processing Hyperparameters
 
