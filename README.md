@@ -33,7 +33,7 @@ This section will describe the steps to download the code of the project to your
 
 You can download the code for this project by cloning the repository to your machine:
 
-```console
+```bash
 git clone https://github.com/dyushen/CS529_final_project.git
 ```
 
@@ -45,19 +45,34 @@ git clone https://github.com/dyushen/CS529_final_project.git
 
 **Install Dependencies**
 
-```console
+```bash
 pip install -r requirements.txt
 ```
 **Run the Image Processing**
 
-```console
+```bash
+# parameter shorthand
 python preprocess.py -m -p ./path/to/images/ -h 35 -t 7 -s 21 -g 11 -r 5 -a 15 -e 45 -w 7 -n 21 -d 4 -o 1 -l 10 -z 20
 ```
 
 or
 
-```console
-python preprocess.py --manual_mode --img_path ./path/to/images/ --h_alv 35 --tws_alv 7 --sws_alv 21 --gbks 11 --thresh 5 --min_area 15 --h_neut 45 --tws_neut 7 --sws_neut 21 --dks 4 --ff_window 1 --ff_loc_sense 10 --ff_size_sens 20
+```bash
+# parameter abbreviations
+python preprocess.py --manual_mode --img_path ./path/to/images/ \
+  --h_alv 35 \
+  --tws_alv 7 \
+  --sws_alv 21 \
+  --gbks 11 \
+  --thresh 5 \
+  --min_area 15 \
+  --h_neut 45 \
+  --tws_neut 7 \
+  --sws_neut 21 \
+  --dks 4 \
+  --ff_window 1 \
+  --ff_loc_sense 10 \
+  --ff_size_sens 20
 ```
 
 #### Assumptions Made by Preprocessing Tool
