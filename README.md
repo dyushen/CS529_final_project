@@ -10,6 +10,8 @@ We provide a Web Demonstration of the system which includes data for two pre-pro
 
 ## Table of Contents  
 [**User Guide**](#application-user-guide)  
+* [Chart Explanations](#charts-and-their-explanations)
+* [Example Workflow](#example-workflow)
 [**Setup Instructions**](#setting-up-locally-for-your-own-use)
 * [Clone The Repository](#cloning-the-repository)
 * [Starting the Web-based Application](#starting-the-application)
@@ -49,6 +51,10 @@ This section will give you an overview of the visualizations included in Alveolu
 | Area Change Start-to-End | ![image](https://user-images.githubusercontent.com/15022659/187834085-9531fda8-5ba7-46ce-8378-49050b0c673a.png) | The change in Interstitial % and Neutrophil area from the Start to End of the selected experiments |
 | Feature Area Distribution | ![image](https://user-images.githubusercontent.com/15022659/187834124-e3e26fdb-a87d-4fab-a9f3-a72ffc3be7dd.png) | The distribution of area by feature type across the selected experiments. Select the checkbox in the upper right to only show values at max inflation |
 | Feature Area Difference Over Time | ![image](https://user-images.githubusercontent.com/15022659/187834166-a24cf7a3-b533-4004-9698-acecafa905da.png) |  The absolute difference in area by feature type between the two selected experiments |
+
+
+### Example Workflow
+
 
 
 ---
