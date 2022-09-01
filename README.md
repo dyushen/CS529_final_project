@@ -39,8 +39,20 @@ git clone https://github.com/dyushen/CS529_final_project.git
 ### Data Preprocessing
 
 ```console
-python preprocess.py ...
+python preprocess.py -m -p ./path/to/images/ -h 35 -t 7 -s 21 -g 11 -r 5 -a 15 -e 45 -w 7 -n 21 -d 4 -o 1 -l 10 -z 20
 ```
+or
+```console
+python preprocess.py --manual_mode --img_path ./path/to/images/ --h_alv 35 --tws_alv 7 --sws_alv 21 --gbks 11 --thresh 5 --min_area 15 --h_neut 45 --tws_neut 7 --sws_neut 21 --dks 4 --ff_window 1 --ff_loc_sense 10 --ff_size_sens 20
+```
+
+#### Assumptions Made by Preprocessing Tool
+
+The preprocessing tool makes several assumptions regarding the format of the stored data and where the outputs will be saved. Please ensure that the necessary steps are completed before running the above command(s). The assumptions are described below.
+
+- Images are divided into two channels: ch2 and ch4, stored in two separate directories. These directories must be named exactly "cv2" and "ch4".
+- Images are saved in the ".ome.tif" format and the archive is named following this general format: ```<text>_Ch<2,4>_000001.ome.tif```
+- A directory named "combo" exists in the provided image directory.
 
 #### Tuning Processing Hyperparameters
 
@@ -49,7 +61,7 @@ python preprocess.py ...
 | Denoising Filter Strength (Alveoli)       | `--h_alv`        | `-h`      | extraction | 35 | removes noise from images but can also remove image details if set too high |
 | Template Size (Alveoli)                   | `--tws_alv`      | `-t`      | extraction | 7  | must be odd number; area to calculate denoising operation, so a smaller value will focus on eliminating fine noise |
 | Search Size (Alveoli)                     | `--sws_alv`      | `-s`      | extraction | 21 | must be odd number; area to calculate averaging operation, so a smaller value will only use very close regions of image to fill in noise |
-| Blur Kernel Size                          | `--gbks`         | `-g`      | extraction | 11 | must be odd number; area to blur image to further eliminate holes/edges caused by noise (recommended starting value = 11) |
+| Blur Kernel Size                          | `--gbks`         | `-g`      | extraction | 11 | must be odd number; area to blur image to further eliminate holes/edges caused by noise |
 | Threshold                                 | `--thresh`       | `-r`      | extraction | 5  | limit pixel intensity to keep in image, effectively eliminates noisy pixels leftover by the denoising and blurring operations |
 | Min Area                                  | `--min_area`     | `-a`      | extraction | 15 | minimum area a detected region must have in order to be maintained as a detected feature (**highly dependent on quality of videos**) |
 | Denoising Filter Strength _(Neutrophil)_  | `--h_neut`       | `-e`      | extraction | 45 | removes noise from images but can also remove image details if set too high |
@@ -63,7 +75,7 @@ python preprocess.py ...
 
 ### Setting Up Your Application
 
-
+a
 
 ---
 
