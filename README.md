@@ -12,6 +12,7 @@ We provide a Web Demonstration of the system which includes data for two pre-pro
 [**User Guide**](#application-user-guide)  
 * [Chart Explanations](#charts-and-their-explanations)
 * [Example Workflow](#example-workflow)
+
 [**Setup Instructions**](#setting-up-locally-for-your-own-use)
 * [Clone The Repository](#cloning-the-repository)
 * [Starting the Web-based Application](#starting-the-application)
