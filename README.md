@@ -9,18 +9,19 @@ We provide a Web Demonstration of the system which includes data for two pre-pro
 ---
 
 ## Table of Contents  
-[**User Guide**](#using-the-web-application)  
+[**User Guide**](#application-user-guide)  
 [**Setup Instructions**](#setting-up-locally-for-your-own-use)
 * [Clone The Repository](#cloning-the-repository)
+* [Starting the Web-based Application](#starting-the-application)
 * [Data Preprocessing](#data-preprocessing)
-* [Running the Web-based Application](#setting-up-locally-for-your-own-use)
+* [Loading Your Preprocessed Data](#adding-your-preprocessed-data)
 * [Setup Instructions](#setting-up-locally-for-your-own-use)
 
 [**Libraries and Tools Used**](#libraries-and-tools)
 
 ---
 
-##  Using the Web-based Application
+##  Application User Guide
 
 ---
 
@@ -36,12 +37,25 @@ You can download the code for this project by cloning the repository to your mac
 git clone https://github.com/dyushen/CS529_final_project.git
 ```
 
+### Starting the Application
+
+
+
 ### Data Preprocessing
+
+**Install Dependencies**
+
+```console
+pip install -r requirements.txt
+```
+**Run the Image Processing**
 
 ```console
 python preprocess.py -m -p ./path/to/images/ -h 35 -t 7 -s 21 -g 11 -r 5 -a 15 -e 45 -w 7 -n 21 -d 4 -o 1 -l 10 -z 20
 ```
+
 or
+
 ```console
 python preprocess.py --manual_mode --img_path ./path/to/images/ --h_alv 35 --tws_alv 7 --sws_alv 21 --gbks 11 --thresh 5 --min_area 15 --h_neut 45 --tws_neut 7 --sws_neut 21 --dks 4 --ff_window 1 --ff_loc_sense 10 --ff_size_sens 20
 ```
@@ -82,7 +96,7 @@ Below is an example of the input data for each `ch2` anc `ch4` image type. Note:
 | Filter Size Sensitivity                   | `--ff_size_sens` | `-z`      | filtering  | 20 | how close feature areas should be in neighboring frames to be counted as the same, note that the unit here is (approximately) square pixels
 
 
-### Setting Up Your Application
+### Adding Your Preprocessed Data
 
 a
 
